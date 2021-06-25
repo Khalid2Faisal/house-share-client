@@ -1,9 +1,10 @@
 import React from 'react';
+import {Listings} from "./sections"
 
 function App() {
   return (
     <div className="App">
-      <h1>Book it</h1>
+      <Listings title="Book it listing" />
     </div>
   );
 }
