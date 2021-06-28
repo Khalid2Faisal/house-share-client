@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
+import "./styles/index.css";
 
 const client = new ApolloClient({ uri: "/api" });
 
