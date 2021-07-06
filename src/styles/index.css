@@ -1,1 +1,35 @@
 @import "~antd/dist/antd.css";
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+
+html {
+  overflow: auto;
+}
+#root,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+#app {
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.ant-layout {
+  background: #fff;
+}
+
+.app__affix-header {
+  z-index: 100;
+}
+.app__affix-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+@media (max-width: 36em) {
+  .app__affix-footer {
+    display: none;
+  }
+}
