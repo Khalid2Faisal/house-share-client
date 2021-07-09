@@ -4,29 +4,44 @@
   line-height: 120px;
   background: #fff;
 }
-.log-in {
+.log-in__spinner {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.log-in-card {
+
+@media only screen and (min-width: 500px) {
+  .log-in-card__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+}
+.log-in-card.ant-card {
   width: 450px;
   text-align: center;
   padding: 10px 0 20px;
 }
 @media only screen and (max-width: 500px) {
-  .log-in-card {
+  .log-in-card__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .log-in-card.ant-card {
     width: 350px;
-    text-align: center;
     padding: 5px 0 10px;
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 800px) and (orientation: landscape) {
-  .log-in-card {
+  .log-in-card.ant-card {
     width: 550px;
-    text-align: center;
     padding: 5px 0 10px;
+    margin-top: 6.2rem;
+    margin-bottom: 0.75rem;
   }
 }
 .log-in-card__intro-title.ant-typography,

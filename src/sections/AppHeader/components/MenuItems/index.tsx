@@ -41,7 +41,7 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
 
   const subMenuLogin =
     viewer.id && viewer.avatar ? (
-      <SubMenu title={<Avatar src={viewer.avatar} />}>
+      <SubMenu key="sub-menu" title={<Avatar src={viewer.avatar} />}>
         <Item key="/user">
           <Link to={`/user/${viewer.id}`}>
             <UserOutlined style={{ marginRight: 5 }} />
@@ -56,7 +56,7 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
         </Item>
       </SubMenu>
     ) : (
-      <Item>
+      <Item key="/login">
         <Link to="/login">
           <Button type="primary">Sign in</Button>
         </Link>

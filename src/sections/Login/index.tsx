@@ -70,7 +70,7 @@ export const Login = ({ setViewer }: Props) => {
 
   if (logInLoading) {
     return (
-      <Content className="log-in">
+      <Content className="log-in__spinner">
         <Spin size="large" tip="Logging you in..." />
       </Content>
     );
@@ -86,38 +86,40 @@ export const Login = ({ setViewer }: Props) => {
   ) : null;
 
   return (
-    <Content className="log-in">
+    <Content>
       {logInErrorBannerElement}
-      <Card className="log-in-card">
-        <div className="log-in-card__intro">
-          <Title level={3} className="log-in-card__intro-title">
-            <span role="img" aria-label="wave">
-              👋
+      <div className="log-in-card__container">
+        <Card className="log-in-card">
+          <div className="log-in-card__intro">
+            <Title level={3} className="log-in-card__intro-title">
+              <span role="img" aria-label="wave">
+                👋
+              </span>
+            </Title>
+            <Title level={3} className="log-in-card__intro-title">
+              Log in to HouseShare!
+            </Title>
+            <Text>Sign in with Google to start booking available rentals!</Text>
+          </div>
+          <button
+            className="log-in-card__google-button"
+            onClick={handleAuthorize}
+          >
+            <img
+              alt="google-logo"
+              className="log-in-card__google-button-logo"
+              src={googleLogo}
+            ></img>
+            <span className="log-in-card__google-button-text">
+              Sign in with Google
             </span>
-          </Title>
-          <Title level={3} className="log-in-card__intro-title">
-            Log in to HouseShare!
-          </Title>
-          <Text>Sign in with Google to start booking available rentals!</Text>
-        </div>
-        <button
-          className="log-in-card__google-button"
-          onClick={handleAuthorize}
-        >
-          <img
-            alt="google-logo"
-            className="log-in-card__google-button-logo"
-            src={googleLogo}
-          ></img>
-          <span className="log-in-card__google-button-text">
-            Sign in with Google
-          </span>
-        </button>
-        <Text type="secondary" className="log-in-card-text__secodary">
-          Note: By signing in, you'll be redirected to the Google consent form
-          to sign in with your Google account.
-        </Text>
-      </Card>
+          </button>
+          <Text type="secondary" className="log-in-card-text__secodary">
+            Note: By signing in, you'll be redirected to the Google consent form
+            to sign in with your Google account.
+          </Text>
+        </Card>
+      </div>
     </Content>
   );
 };
