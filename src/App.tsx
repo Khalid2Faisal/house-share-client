@@ -76,7 +76,11 @@ function App() {
             path="/login"
             render={(props) => <Login {...props} setViewer={setViewer} />}
           />
-          <Route exact path="/user/:id" component={User} />
+          <Route
+            exact
+            path="/user/:id"
+            render={(props) => <User {...props} viewer={viewer} />}
+          />
           <Route component={NotFound} />
         </Switch>
       </Layout>

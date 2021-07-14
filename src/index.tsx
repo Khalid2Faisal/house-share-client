@@ -6,14 +6,22 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import "./styles/index.css";
 
-const client = new ApolloClient({ uri: "/api" });
+const client = new ApolloClient({
+  uri: "/api",
+  request: async (operation) => {
+    const token = sessionStorage.getItem("token");
+    operation.setContext({
+      headers: {
+        "X-CSRF-TOKEN": token || "",
+      },
+    });
+  },
+});
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ApolloProvider client={client}>
-      <App />
-    </ApolloProvider>
-  </React.StrictMode>,
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>,
   document.getElementById("root")
 );
 
