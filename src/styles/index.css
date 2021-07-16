@@ -19,7 +19,9 @@ html {
 .ant-layout {
   background: #fff;
 }
-
+main.ant-layout-content.home {
+  line-height: normal;
+}
 .app__affix-header {
   z-index: 100;
 }
