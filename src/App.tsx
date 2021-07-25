@@ -10,6 +10,7 @@ import {
   Listings,
   Login,
   NotFound,
+  Stripe,
   User,
 } from "./sections";
 import { AppHeaderSkeleton, ErrorBanner } from "./lib/components";
@@ -35,6 +36,11 @@ function App() {
     onCompleted: (data) => {
       if (data && data.logIn) {
         setViewer(data.logIn);
+        if (data.logIn.token) {
+          sessionStorage.setItem("token", data.logIn.token);
+        } else {
+          sessionStorage.removeItem("token");
+        }
       }
     },
   });
@@ -78,8 +84,17 @@ function App() {
           />
           <Route
             exact
+            path="/stripe"
+            render={(props) => (
+              <Stripe {...props} viewer={viewer} setViewer={setViewer} />
+            )}
+          />
+          <Route
+            exact
             path="/user/:id"
-            render={(props) => <User {...props} viewer={viewer} />}
+            render={(props) => (
+              <User {...props} viewer={viewer} setViewer={setViewer} />
+            )}
           />
           <Route component={NotFound} />
         </Switch>

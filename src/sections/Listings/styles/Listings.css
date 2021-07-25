@@ -14,6 +14,9 @@
   padding: 10px 0;
   background: #fff;
 }
+.ant-layout-content.listings {
+  line-height: normal;
+}
 .listings-filters
   .ant-select-selection--single
   .ant-select-selection__rendered {
@@ -22,8 +25,11 @@
 .listings-filters span {
   padding-right: 5px;
 }
+.ant-pagination.listings-pagination {
+  padding-top: 10px;
+}
 .listings-pagination {
-  padding: 10px 0;
+  /* padding: 10px 0; */
   float: right;
 }
 @media (max-width: 48em) {

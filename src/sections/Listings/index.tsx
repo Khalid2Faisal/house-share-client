@@ -24,7 +24,7 @@ interface MatchParams {
 const { Content } = Layout;
 const { Paragraph, Text, Title } = Typography;
 
-const PAGE_LIMIT = 4;
+const PAGE_LIMIT = 8;
 
 export const Listings = ({ match }: RouteComponentProps<MatchParams>) => {
   const locationRef = useRef(match.params.location);
