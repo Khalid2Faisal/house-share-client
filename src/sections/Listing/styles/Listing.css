@@ -7,9 +7,10 @@
     padding-right: 20px;
   }
 }
-.listing .ant-typography.ant-typography-ellipsis {
+.listing-details .ant-typography.ant-typography-ellipsis {
   line-height: 1.5em;
 }
+
 .listing-bookings h3.ant-typography,
 .listing-bookings h4.ant-typography {
   color: #1d226c;
