@@ -58,7 +58,7 @@ export const AppHeader = withRouter(
           </div>
           <div className="app-header__search-input">
             <Search
-              placeholder="Search 'San Fransisco'"
+              placeholder="Search 'Luxor'"
               enterButton
               value={search}
               onChange={(evt) => setSearch(evt.target.value)}

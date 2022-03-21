@@ -12,9 +12,45 @@
   color: var(--headingTextColor);
   font-family: var(--primaryFont);
 }
-.home-hero__search-input input {
-  border: 1px solid #f0f1f2;
-  box-shadow: 0 2px 4px rgba(29, 34, 108, 0.1);
+
+.home-hero__search-input .ant-input-wrapper .ant-input {
+  border-radius: 100px;
+  max-height: 3.2rem;
+  height: 3.2rem;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  box-shadow: none;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.home-hero__search-input .ant-input-wrapper .ant-input-group-addon {
+  background-color: transparent;
+}
+
+.home-hero__search-input .ant-input-wrapper .ant-input-group-addon .ant-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 400px !important;
+  padding: 19px !important;
+  z-index: 5;
+}
+
+.home-hero__search-input
+  .ant-input-wrapper
+  .ant-input-group-addon
+  .ant-btn
+  .anticon-search {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
 }
 .home-hero__cards {
   padding-top: 60px;

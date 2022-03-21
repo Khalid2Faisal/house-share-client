@@ -63,13 +63,7 @@ export const Home = ({ history }: RouteComponentProps) => {
   };
 
   return (
-    <Content
-      className="home"
-      style={{
-        backgroundImage: `url(${mapBackground})`,
-        backgroundRepeat: "repeat-x",
-      }}
-    >
+    <Content className="home">
       <HomeHero onSearch={onSearch} />
 
       <div className="home__cta-section">

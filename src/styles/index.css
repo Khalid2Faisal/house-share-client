@@ -10,6 +10,7 @@
 
 html {
   overflow: auto;
+  background-color: #fafafa;
 }
 #root,
 body,
@@ -19,13 +20,13 @@ html {
 }
 #app {
   position: relative;
-  background: #fff;
+  background: #fafafa;
   min-height: 100vh;
   font-family: var(--primaryFont);
 }
 
-.ant-layout {
-  background: #fff;
+.ant-layout-content {
+  background: #fafafa;
 }
 main.ant-layout-content.home {
   line-height: normal;

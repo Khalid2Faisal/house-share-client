@@ -67,6 +67,49 @@
   box-shadow: 0 2px 4px rgba(29, 34, 108, 0.1);
 }
 
+.app-header__search-input .ant-input-wrapper {
+}
+
+.app-header__search-input .ant-input-wrapper .ant-input {
+  border-radius: 100px;
+  max-height: 2.8rem;
+  height: 2.8rem;
+  border-top-right-radius: 100px !important;
+  border-bottom-right-radius: 100px !important;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  box-shadow: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+  transition: all 0.5s ease;
+}
+
+.app-header__search-input .ant-input-wrapper .ant-input-group-addon {
+  background-color: transparent;
+}
+
+.app-header__search-input .ant-input-wrapper .ant-input-group-addon .ant-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 400px !important;
+  padding: 15px !important;
+  z-index: 5;
+}
+
+.app-header__search-input
+  .ant-input-wrapper
+  .ant-input-group-addon
+  .ant-btn
+  .anticon-search {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-right: -50%;
+}
+
 .app-header__menu-section {
   width: 30%;
 }
