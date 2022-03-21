@@ -3,6 +3,7 @@ import { useMutation } from "@apollo/react-hooks";
 import { Link } from "react-router-dom";
 import { Menu, Button, Avatar } from "antd";
 import { HomeTwoTone, UserOutlined, LogoutOutlined } from "@ant-design/icons";
+import { iconColor } from "../../../../lib/utils";
 
 import {
   displaySuccessNotification,
@@ -41,14 +42,18 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
 
   const subMenuLogin =
     viewer.id && viewer.avatar ? (
-      <SubMenu key="sub-menu" title={<Avatar src={viewer.avatar} />}>
-        <Item key="/user">
+      <SubMenu
+        className="sub-menu"
+        key="sub-menu"
+        title={<Avatar src={viewer.avatar} />}
+      >
+        <Item className="sub-menu-item" key="/user">
           <Link to={`/user/${viewer.id}`}>
             <UserOutlined style={{ marginRight: 5 }} />
             Profile
           </Link>
         </Item>
-        <Item key="/logout">
+        <Item className="sub-menu-item" key="/logout">
           <div onClick={handleLogOut}>
             <LogoutOutlined style={{ marginRight: 5 }} />
             Log out
@@ -67,8 +72,13 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
     <Menu mode="horizontal" selectable={false} className="menu">
       <Item key="/host">
         <Link to="/host">
-          <HomeTwoTone style={{ fontSize: 20, marginRight: 5 }} />
-          Host
+          <HomeTwoTone
+            twoToneColor="#de3151"
+            style={{ fontSize: 20, marginRight: 5 }}
+          />
+          <span style={{ color: "var(--headingTextColor)", margin: 0 }}>
+            Host
+          </span>
         </Link>
       </Item>
       {subMenuLogin}

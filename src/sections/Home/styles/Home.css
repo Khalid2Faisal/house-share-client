@@ -9,7 +9,8 @@
   max-width: 600px;
 }
 .home-hero__title.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
+  font-family: var(--primaryFont);
 }
 .home-hero__search-input input {
   border: 1px solid #f0f1f2;
@@ -51,7 +52,10 @@
   padding: 40px 0 20px;
 }
 .home-listings__title.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
+  font-family: var(--primaryFont);
+  font-size: x-large;
+  font-weight: bold;
   display: inline-block;
 }
 .home-listings-skeleton {
@@ -80,7 +84,9 @@
   margin: 0 auto;
 }
 .home__cta-section-title.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
+  font-family: var(--primaryFont);
+  font-weight: bold;
 }
 .home__cta-section-button {
   margin-top: 20px;
@@ -89,7 +95,10 @@
   padding: 40px 0 20px;
 }
 .home__listings-title.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
+  font-family: var(--primaryFont);
+  font-weight: bold;
+  font-size: x-large;
   display: inline-block;
 }
 .home__listings-img-cover {

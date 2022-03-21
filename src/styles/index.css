@@ -1,5 +1,12 @@
 @import "~antd/dist/antd.css";
-@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --primaryColor: #ff385c;
+  --primaryColorHeavy: #de3151;
+  --primaryShadowColor: rgb(222 49 81 / 20%);
+  --headingTextColor: #222222;
+  --primaryFont: "Nunito";
+}
 
 html {
   overflow: auto;
@@ -14,6 +21,7 @@ html {
   position: relative;
   background: #fff;
   min-height: 100vh;
+  font-family: var(--primaryFont);
 }
 
 .ant-layout {
@@ -21,6 +29,45 @@ html {
 }
 main.ant-layout-content.home {
   line-height: normal;
+}
+.ant-btn-primary {
+  background: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+.ant-btn-primary:hover,
+.ant-btn-primary:focus,
+.ant-btn-primary:active {
+  background: var(--primaryColorHeavy);
+  border-color: var(--primaryColorHeavy);
+}
+.ant-input-group .ant-input:hover {
+  border-color: var(--primaryColor);
+}
+.ant-input-group .ant-input:focus,
+.ant-input-group .ant-input:active {
+  border-color: var(--primaryColor);
+  box-shadow: 0 0 0 2px var(--primaryShadowColor);
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  color: var(--primaryColor);
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid var(--primaryColor);
 }
 .app__affix-header {
   z-index: 100;

@@ -13,7 +13,7 @@
   padding-bottom: 20px;
 }
 .listing-card__price.ant-typography {
-  color: #1d226c;
+  color: var(--primaryColor);
 }
 .listing-card__price.ant-typography span {
   color: #bfbfbf;
