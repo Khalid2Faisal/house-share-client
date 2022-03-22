@@ -11,9 +11,8 @@ import { ListingsFilter } from "../../lib/graphql/globalTypes";
 import { displayErrorMessage } from "../../lib/utils";
 import { HomeHero, HomeListings, HomeListingsSkeleton } from "./components";
 
-import mapBackground from "./assets/map-background.jpg";
-import sanFransiscoImage from "./assets/san-fransisco.jpg";
-import cancunImage from "./assets/cancun.jpg";
+import sanFransiscoImage from "./assets/golden_gate_bridge2.jpg";
+import cancunImage from "./assets/cancun_mexico2.jpg";
 
 import "./styles/Home.css";
 
@@ -76,7 +75,7 @@ export const Home = ({ history }: RouteComponentProps) => {
         </Paragraph>
         <Link
           to="/listings/united%20states"
-          className="ant-btn ant-btn-primary ant-btn-lg home__cta-section-button"
+          className="ant-btn ant-btn-primary ant-btn-lg ant-btn-round home__cta-section-button"
         >
           Popular listings in the United States
         </Link>

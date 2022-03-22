@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, withRouter, RouteComponentProps } from "react-router-dom";
-import { Layout, Input } from "antd";
+import { Layout, Input, Typography } from "antd";
 
 import { displayErrorMessage } from "../../lib/utils";
 import { MenuItems } from "./components";
@@ -18,6 +18,7 @@ interface Props {
 
 const { Header } = Layout;
 const { Search } = Input;
+const { Title } = Typography;
 
 export const AppHeader = withRouter(
   ({ viewer, setViewer, location, history }: Props & RouteComponentProps) => {
@@ -55,6 +56,9 @@ export const AppHeader = withRouter(
             <Link to="/">
               <img src={logo} alt="App logo" />
             </Link>
+            <Title level={3} className="app-header__logo-name">
+              House Share
+            </Title>
           </div>
           <div className="app-header__search-input">
             <Search

@@ -3,7 +3,6 @@ import { useMutation } from "@apollo/react-hooks";
 import { Link } from "react-router-dom";
 import { Menu, Button, Avatar } from "antd";
 import { HomeTwoTone, UserOutlined, LogoutOutlined } from "@ant-design/icons";
-import { iconColor } from "../../../../lib/utils";
 
 import {
   displaySuccessNotification,

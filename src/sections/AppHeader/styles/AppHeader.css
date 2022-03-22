@@ -16,6 +16,21 @@
 .app-header__logo img {
   width: 70px;
 }
+
+.app-header__logo-name {
+  display: none;
+}
+
+@media screen and (min-width: 670px) {
+  .app-header__logo-name {
+    font-family: Sacramento, cursive;
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    top: 5px;
+  }
+}
+
 .app-header__search-input {
   display: flex;
   align-items: center;
