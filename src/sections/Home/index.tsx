@@ -91,6 +91,9 @@ export const Home = ({ history }: RouteComponentProps) => {
           <Col xs={24} sm={12}>
             <Link to="/listings/san%20fransisco">
               <div className="home__listings-img-cover">
+                <p className="home__listings-text">
+                  A weekend getaway to the Golden Gate Bridge?
+                </p>
                 <img
                   src={sanFransiscoImage}
                   alt="San Fransisco"
@@ -102,6 +105,9 @@ export const Home = ({ history }: RouteComponentProps) => {
           <Col xs={24} sm={12}>
             <Link to="/listings/cancún">
               <div className="home__listings-img-cover">
+                <p className="home__listings-text">
+                  Or a two-week trip to visit cancun, Mexico?
+                </p>
                 <img
                   src={cancunImage}
                   alt="Cancún"

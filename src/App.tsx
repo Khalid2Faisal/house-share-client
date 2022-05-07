@@ -5,6 +5,7 @@ import { Elements, StripeProvider } from "react-stripe-elements";
 import { Affix, Spin, Layout } from "antd";
 import {
   AppHeader,
+  AppFooter,
   Home,
   Host,
   Listing,
@@ -114,6 +115,7 @@ function App() {
             />
             <Route component={NotFound} />
           </Switch>
+          <AppFooter viewer={viewer} setViewer={setViewer} />
         </Layout>
       </Router>
     </StripeProvider>

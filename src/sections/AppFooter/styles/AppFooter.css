@@ -1,0 +1,49 @@
+.app-footer.ant-layout-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px #f0f1f2;
+  padding: 0;
+  padding-left: 6rem;
+  padding-right: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 1px 8px 0 rgb(0 0 0 / 0.05);
+}
+
+.app-footer__logo {
+  display: inline-block;
+  padding: 0 20px;
+}
+.app-footer__logo img {
+  width: 70px;
+}
+
+.app-footer__logo-name {
+  font-family: Sacramento, cursive;
+  display: inline-block;
+  padding-left: 10px;
+  position: relative;
+  top: 5px;
+}
+
+.app-footer__links-container,
+.app-footer__actions-container {
+}
+
+.app-footer__text {
+  margin-bottom: 0.8rem;
+}
+
+.app-footer__links,
+.app-footer-actions {
+}
+
+.app-footer__link {
+  display: block;
+  color: var(--secondaryTextColor);
+}
+.app-footer__link:hover {
+  color: var(--primaryColorHeavy);
+}

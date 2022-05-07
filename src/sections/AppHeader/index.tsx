@@ -55,10 +55,10 @@ export const AppHeader = withRouter(
           <div className="app-header__logo">
             <Link to="/">
               <img src={logo} alt="App logo" />
+              <Title level={3} className="app-header__logo-name">
+                House Share
+              </Title>
             </Link>
-            <Title level={3} className="app-header__logo-name">
-              House Share
-            </Title>
           </div>
           <div className="app-header__search-input">
             <Search
