@@ -157,6 +157,7 @@
   overflow: hidden;
   object-fit: cover;
 }
+
 .home__listings-text {
   z-index: 10;
   position: absolute;
@@ -164,9 +165,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 440px) {
+  .home__listings-text {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
 @media (max-width: 36em) {
   .home__listings-img-cover {
     padding: 10px 0;
