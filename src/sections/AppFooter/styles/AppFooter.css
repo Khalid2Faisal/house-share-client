@@ -68,10 +68,6 @@
   margin-bottom: 0.8rem;
 }
 
-.app-footer__links,
-.app-footer-actions {
-}
-
 .app-footer__link {
   display: block;
   color: var(--secondaryTextColor);

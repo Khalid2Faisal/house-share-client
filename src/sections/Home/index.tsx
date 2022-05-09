@@ -75,7 +75,7 @@ export const Home = ({ history }: RouteComponentProps) => {
         </Paragraph>
         <Link
           to="/listings/united%20states"
-          className="ant-btn ant-btn-primary ant-btn-lg ant-btn-round home__cta-section-button"
+          className="home__cta-section-button ant-btn ant-btn-primary ant-btn-round"
         >
           Popular listings in the United States
         </Link>
