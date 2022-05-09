@@ -37,6 +37,12 @@
   flex-grow: 1;
   padding-right: 10px;
 }
+@media screen and (max-width: 380px) {
+  .app-header__search-input .ant-input-search-button {
+    display: none;
+  }
+}
+
 .app-header__search-input .ant-input-group {
   border: 0;
   width: 100%;
