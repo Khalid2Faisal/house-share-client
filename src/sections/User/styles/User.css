@@ -47,6 +47,10 @@
 .user-profile__card {
   width: 100%;
 }
+.user-profile__card.ant-card {
+  border: 1px solid var(--borderColor);
+  border-radius: 0.5rem;
+}
 .user-profile__avatar {
   text-align: center;
 }

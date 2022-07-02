@@ -9,6 +9,7 @@
   --headingTextColor: #222222;
   --primaryTextColor: #111827;
   --secondaryTextColor: #1f2937;
+  --borderColor: #222222;
   --primaryFont: "Nunito";
 }
 
@@ -45,6 +46,7 @@ main.ant-layout-content.home {
   background: var(--primaryColorHeavy);
   border-color: var(--primaryColorHeavy);
 }
+
 .ant-input-group .ant-input:hover {
   border-color: var(--headingTextColor);
 }

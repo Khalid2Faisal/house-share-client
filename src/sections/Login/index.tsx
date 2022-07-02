@@ -19,6 +19,7 @@ import { AUTH_URL } from "../../lib/graphql/queries";
 import { LOG_IN } from "../../lib/graphql/mutations";
 
 // image assets
+import logo from "./assets/logo.png";
 import googleLogo from "./assets/google_logo.jpg";
 
 // styles
@@ -93,7 +94,7 @@ export const Login = ({ setViewer }: Props) => {
           <div className="log-in-card__intro">
             <Title level={3} className="log-in-card__intro-title">
               <span role="img" aria-label="wave">
-                👋
+                <img alt="logo" className="log-in-card__logo" src={logo}></img>
               </span>
             </Title>
             <Title level={3} className="log-in-card__intro-title">

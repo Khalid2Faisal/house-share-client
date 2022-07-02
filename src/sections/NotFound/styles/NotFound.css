@@ -1,0 +1,10 @@
+.not-found__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.not-found__text {
+  margin-bottom: 15rem;
+  color: var(--headingTextColor);
+}
