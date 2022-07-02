@@ -4,7 +4,17 @@
   align-items: center;
   min-height: 100vh;
 }
+.not-found__message {
+  margin-bottom: 10rem;
+}
 .not-found__text {
-  margin-bottom: 15rem;
   color: var(--headingTextColor);
+  margin-bottom: 0;
+}
+.not-found__home-page-link a {
+  display: block;
+  color: var(--primaryColorHeavy);
+}
+.not-found__home-page-link a:hover {
+  color: var(--primaryColor);
 }
