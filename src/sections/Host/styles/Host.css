@@ -18,7 +18,7 @@
 }
 
 .host__form-title.ant-typography {
-  color: #1d226c;
+  color: var(--primaryTextColor);
   margin-bottom: 5px;
 }
 

@@ -17,6 +17,11 @@
 .ant-layout-content.listings {
   line-height: normal;
 }
+.listings-pagination__container {
+  background: #fafafa;
+  margin-left: -0.2rem;
+  margin-right: -0.2rem;
+}
 .listings-filters
   .ant-select-selection--single
   .ant-select-selection__rendered {
@@ -24,9 +29,11 @@
 }
 .listings-filters span {
   padding-right: 5px;
+  color: var(--primaryTextColor);
 }
 .ant-pagination.listings-pagination {
   padding-top: 10px;
+  background: #fafafa;
 }
 .listings-pagination {
   /* padding: 10px 0; */
@@ -48,7 +55,7 @@
   font-size: 15px;
 }
 .listings__affix {
-  background: #fff;
+  /* background: #fff; */
   padding: 10px 0;
 }
 .listings__title.ant-typography {

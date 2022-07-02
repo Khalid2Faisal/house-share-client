@@ -72,7 +72,7 @@ export const Listings = ({ match }: RouteComponentProps<MatchParams>) => {
   const listingsSectionElement =
     listings && listings.result.length ? (
       <div>
-        <Affix offsetTop={64}>
+        <Affix offsetTop={64} className="listings-pagination__container">
           <ListingsPagination
             total={listings.total}
             page={page}
