@@ -39,6 +39,8 @@ main.ant-layout-content.home {
 .ant-btn-primary {
   background: var(--primaryColor);
   border-color: var(--primaryColor);
+  border-radius: 0.3rem;
+  font-weight: 500;
 }
 .ant-btn-primary:hover,
 .ant-btn-primary:focus,

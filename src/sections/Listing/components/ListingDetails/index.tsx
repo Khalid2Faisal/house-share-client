@@ -29,7 +29,10 @@ export const ListingDetails = ({ listing }: Props) => {
           className="listing-details__city-address"
         >
           <Link to={`/listings/${city}`}>
-            <EnvironmentTwoTone style={{ color: iconColor, marginRight: 4 }} />
+            <EnvironmentTwoTone
+              color={iconColor}
+              style={{ color: "#de3151", marginRight: 4 }}
+            />
             {city}
           </Link>
           <Divider type="vertical" />

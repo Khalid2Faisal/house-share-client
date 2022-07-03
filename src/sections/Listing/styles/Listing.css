@@ -13,7 +13,7 @@
 
 .listing-bookings h3.ant-typography,
 .listing-bookings h4.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
 }
 .listing-bookings__section {
   font-size: 15px;
@@ -37,13 +37,18 @@
   margin: 0 auto;
   display: block;
 }
+
 @media (max-width: 62em) {
   .listing-booking {
     padding-top: 40px;
   }
 }
+.listing-booking .ant-card {
+  border: 1px solid var(--borderColor);
+  border-radius: 0.5rem;
+}
 .listing-booking__card-title.ant-typography {
-  color: #1d226c;
+  color: var(--primaryColorHeavy);
   margin-bottom: 5px;
 }
 .listing-booking__card-title.ant-typography span {
@@ -102,7 +107,7 @@
 }
 .listing-details h3.ant-typography,
 .listing-details h4.ant-typography {
-  color: #1d226c;
+  color: var(--headingTextColor);
 }
 .listing-details__image {
   width: 100%;
@@ -110,6 +115,7 @@
   background-size: cover;
   background-position: 50%;
   margin-bottom: 20px;
+  border-radius: 0.5rem;
 }
 @media (max-width: 75em) {
   .listing-details__image {
@@ -142,6 +148,7 @@
   font-size: 15px;
   padding: 5px 0;
 }
+
 .listing-details__about-items {
   padding-bottom: 20px;
   line-height: 1.5em;
@@ -166,6 +173,7 @@
 .listing-details__booking-stars {
   font-size: 13px;
 }
+
 .listing {
   padding: 60px 120px;
 }
