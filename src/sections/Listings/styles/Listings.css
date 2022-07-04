@@ -9,6 +9,7 @@
 }
 .listings .ant-alert {
   margin-bottom: 20px;
+  margin-top: -3rem;
 }
 .listings-filters {
   padding: 10px 0;

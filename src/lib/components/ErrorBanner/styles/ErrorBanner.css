@@ -1,7 +1,7 @@
 .error-banner {
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0px;
+  top: 0;
   left: 0;
   z-index: 99;
 }
