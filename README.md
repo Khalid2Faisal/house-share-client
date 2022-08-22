@@ -1,46 +1,39 @@
-# Getting Started with Create React App
+# House Share Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://res.cloudinary.com/khalid-faisal/image/upload/v1661171568/Personal/house-share-listings-page_kqngai.png)
 
-## Available Scripts
+You can preview this site [here](https://house2share.herokuapp.com/). Back-End code [here](https://github.com/Khalid2Faisal/house-share-server).
 
-In the project directory, you can run:
+## Technical implementation details
 
-### `yarn start`
+- For the front end, I used React, Ant design for styling, typescript, apollo client as GraphQL client, react-stripe-js and react-stripe-elements for payments and react-router-dom for routing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- For the back end, I used NodeJS, Express, Typescript, Stripe for payments, MongoDB as a database, eslint to find problems in my code prior to execution, and GraphQL for better APIs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- I didn't use Redux or any other state management library, because the GraphQL API made it easy for me to deal with my back end data in my front end app and just request the data fields that I want.
 
-### `yarn test`
+- Using Google Geocoding API, I'm able to take the place name that the user writes in the search box and geocode it, then parse the address components and get the country, administrative and city of that place and use them to filter the database and get the listings that found to be in the same region.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Stripe for payments is a good choice, reasonable fees, great documentation and community.
 
-### `yarn build`
+- For authentication, I used Google Authentication, the most used way to authenticate users, secure and easy to configure.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Business Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- House_Share takes a unique approach toward lodging. Part of the “sharing economy,” House_Share offers you someone’s home as a place to stay instead of a hotel.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A House_Share user can list different spaces and book unique accommodations anywhere in the world.
 
-### `yarn eject`
+- House_Share helps make sharing easy, enjoyable, and safe.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- House_Share does not own properties. It acts as an intermediary between those who want to rent out space and those who are looking for space to rent. Creating an account on House_Share is free, and simple.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Once a user clicks on a listing, he can see a range of information about that listing, including the size of the space and the number of guests, check-in, and pricing information, a detailed description of the space, house rules, safety features, and availability.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- A user can rent out the extra space in his/her home, or rent out the entire home.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- To become a host, a user must have an account and register a stripe account, then click on "host" in the upper right corner of the page, After that, the user need to create a listing for the space. A listing is a lot like a profile page for the space he/she want to host.
 
-## Learn More
+## How to use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Execute [`npm start`]  to bootstrap the app:
